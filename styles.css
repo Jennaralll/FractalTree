@@ -1,5 +1,6 @@
 body {
     background-color: rgb(200,200,200);
+    background-image: "background.jpg";
     color: rgb(0,0,0);
     font-family: "Open Sans", sans-serif;
     text-align: center;
@@ -12,7 +13,6 @@ body {
 }
 
 header {
-	background-image: "background.jpg";
 }
 
 footer {
