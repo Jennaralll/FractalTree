@@ -4,7 +4,7 @@ private double branchAngle = 1.0;
 public void setup() 
 {   
 	size(640,480);    
-	noLoop(); 
+	// noLoop(); 
 }
 
 public void draw() 
@@ -18,11 +18,15 @@ public void draw()
 	drawBranches(320, 390, 100, 3*Math.PI/2);  //will add later 
 } 
 
-void keyPressed(){
+public void keyPressed(){
 	if (key == 'e'){
-		branchAngle += 50;
+		branchAngle += .1;
+	}
+	if (key =='w'){
+		branchAngle -=.1;
 	}
 }
+
 public void drawBranches(int x,int y, double branchLength, double angle) 
 {   
 	double angle1, angle2, angle3, angle4;
